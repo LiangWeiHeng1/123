@@ -167,7 +167,7 @@ function indexPreprocess(text) {
     if (!text) return text;
 
     // 1) 删字（照搬 index 的 removeChars）
-    var removeChars = ['特', '奥', '澳', '新', '复', '式', '特奥', '奥特', '元', '码', '数', '门', '米', '斤'];
+    var removeChars = ['特', '奥', '澳', '新', '复', '式', '防', '奥特', '元', '码', '数', '门', '米', '斤'];
     var cleaned = text;
     for (var c = 0; c < removeChars.length; c++) {
         cleaned = cleaned.replaceAll(removeChars[c], '');
